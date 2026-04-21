@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f3f5f8;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    background:#4f7df3;
+    color:white;
+    padding:10px 15px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+}
+
+/* contener */
+.contener {
+    width:90%;
+    margin:40px auto;
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* gauche */
+.badge{
+    display:inline-block;
+    background:#eef3ff;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.contener h1{
+    font-size:40px;
+    color:#1f2a44;
+    margin-bottom:20px;
+}
+
+.contener p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.btn{
+    padding:12px 20px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    
+}
+
+.btn-simple{
+    background:#4f7df3;
+    color:white;
+}
+
+.btn-max{
+    background:white;
+    border:1px solid #ccc;
+    
+}
+
+/* para*/
+.para{
+    display:flex;
+    gap:15px;
+}
+
+.paras{
+    background:#f6f7fb;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+}
+
+/* Image droite */
+.image-box{
+    position:relative;
+}
+
+.image-box img{
+    width:450PX;
+    height: 400px;
+    border-radius:20px;
+    object-fit: cover;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NAC</div>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#">Projets</a>
+        <a href="#">Profil</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="contener">
+
+<!-- gauche -->
+<div>
+    <div class="badge"> Portfolio moderne & évolutif</div>
+
+    <h1>Construire mon parcours avec passion, créativité et ambition</h1>
+
+    <p>
+        Bonjour, je suis Ndeye Amy Cisse, étudiante passionnée par le numérique,
+        l’apprentissage et la création d’interfaces modernes. Je développe progressivement mon univers académique et personnel à travers des projets concrets, simples et soignés.
+    </p>
+
+    <div class="buttons">
+        <button class="btn simple">Voir mes projets</button>
+        <button class="btn max">Me contacter</button>
+    </div>
+
+    <div class="para">
+        <div class="paras">5+<br><small>Projets</small></div>
+        <div class="paras">100%<br><small>Motivation</small></div>
+        <div class="paras">UI<br><small>Design</small></div>
+    </div>
+</div>
+
+<!-- droite -->
+<div class="image-box">
+    <img src="img/PHOTO AMINA.jpg" alt="ma photo">
+
+   
+</div>
+
+</section>
+
+<div class="section">
+    <h2>À Propos</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Notre histoire</h3>
+            <p>Café Délice est né d’une passion pour le café artisanal...</p>
+        </div>
+        <div class="card">
+            <h3>Nos produits</h3>
+            <p>Nous sélectionnons des ingrédients frais et locaux...</p>
+        </div>
+        <div class="card">
+            <h3>Notre ambiance</h3>
+            <p>Un décor moderne et accueillant pour travailler...</p>
+        </div>
+        <div class="card">
+            <h3>Notre promesse</h3>
+            <p>Offrir une expérience unique avec un service attentionné...</p>
+        </div>
+    </div>
+
+</body>
+</html>

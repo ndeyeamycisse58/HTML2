@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .galerie {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Tablette */
+@media (max-width: 768px) {
+  .galerie {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .galerie {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <section class="galerie">
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 1</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 2</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 3</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 4</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 5</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 6</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 7</h3>
+    <p>Petite légende</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Titre 8</h3>
+    <p>Petite légende</p>
+  </div>
+</section>
+    
+</body>
+</html>

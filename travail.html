@@ -22,6 +22,7 @@ body{
 
 /* HEADER */
 header{
+    background: rgb(212, 219, 243);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -121,10 +122,293 @@ nav a{
 }
 
 .image-box img{
-    width:450PX;
-    height: 400px;
+    width:400PX;
+    height: 450px;
     border-radius:20px;
     object-fit: cover;
+}
+
+/* SECTION */
+.section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d6cfc9;
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+section {
+    text-align: center;
+}
+
+ h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2a44;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* SECTIONS */
+
+section {
+
+    padding: 50px;
+
+}
+
+h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+/* GRID */
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto 0;
+    
+
+}
+
+.projets {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+}
+
+.card img {
+width: 100%;
+border-radius: 10px;
+
+}
+
+.gridd {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto 0;
+
+    
+
+}
+
+
+
+.projets {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+}
+
+.card img {
+width: 100%;
+border-radius: 10px;
+
+}
+section {
+
+    padding: 50px;
+
+}
+
+
+/* para*/
+.paras{
+    display:flex;
+    gap:15px;
+}
+
+.para{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+}
+
+    
+
+/* CONTACT */
+.contact{
+  background:#3b82f6;
+  color:white;
+  text-align:center;
+  border-radius:20px;
+  margin:50px;
+}
+
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.btn{
+    margin-top: 15px;
+    padding:12px 20px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+   
+    
+    
+}
+
+.btn-gauche{
+    
+    background:#4f7df3;
+    color:white;
+    
+
+}
+
+.btn-droite{
+    
+    background:white;
+    border:1px solid #ccc;
+    
+    
+    
+}
+
+
+/* FOOTER */
+footer{
+    background: white;
+  text-align:center;
+  padding:20px;
+  border: 1px solid rgb(36, 21, 3);
+  border-radius: 15px;
+}
+
+/* TABLETTE */
+@media (max-width: 992px){
+
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav{
+    margin-top:10px;
+  }
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img{
+    margin-top:20px;
+    width:200px;
+  }
+
+}
+
+
+/* MOBILE */
+@media (max-width: 600px){
+
+  header{
+    padding:20px;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+  .hero{
+    padding:30px 20px;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .buttons{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+  }
+
+  .buttons button{
+    width:100%;
+  }
+
+  section{
+    padding:30px 20px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact{
+    margin:20px;
+    padding:30px 20px;
+  }
+
 }
 
 
@@ -165,41 +449,123 @@ nav a{
     </div>
 
     <div class="para">
-        <div class="paras">5+<br><small>Projets</small></div>
-        <div class="paras">100%<br><small>Motivation</small></div>
-        <div class="paras">UI<br><small>Design</small></div>
+        <div class="paras">5+<br>Projets</div>
+        <div class="paras">100%<br>Motivation</div>
+        <div class="paras">UI<br>Design</div>
     </div>
 </div>
 
 <!-- droite -->
 <div class="image-box">
-    <img src="img/PHOTO AMINA.jpg" alt="ma photo">
+    <img src="photo minatou.jpeg" alt="ma photo">
 
    
 </div>
 
+
+
 </section>
 
+<!-- A PROPOS -->
+
 <div class="section">
-    <h2>À Propos</h2>
+    <h2>À Propos de moi</h2>
     <div class="cards">
         <div class="card">
-            <h3>Notre histoire</h3>
-            <p>Café Délice est né d’une passion pour le café artisanal...</p>
+            <h3>Mon parcours</h3>
+            <p>Je suis une étudiante curieuse et motivée, avec un fort intérêt pour les outils numériques, le web et la communication visuelle. J'aime apprendre en pratiquant construire de petits projets concrets et améliorer progréssivement mes compétences.</p>
         </div>
         <div class="card">
-            <h3>Nos produits</h3>
-            <p>Nous sélectionnons des ingrédients frais et locaux...</p>
+            <h3>Mes objectifs</h3>
+            <p>Mon objectis est de développer un profil solide, capable de relier connaissances académiques, créativité et compétences techniques. Je souhaites bâtir un portfolio clair, sérieux et évolutif.</p>
         </div>
         <div class="card">
-            <h3>Notre ambiance</h3>
-            <p>Un décor moderne et accueillant pour travailler...</p>
+            <h3>Mes qualités</h3>
+            <p>Je suis organisée, persévérante, attentive aux détails et toujours prête à apprendre. J'aime les interfaces bien structurées et les réalisations simples mais soignées</p>
         </div>
         <div class="card">
-            <h3>Notre promesse</h3>
-            <p>Offrir une expérience unique avec un service attentionné...</p>
+            <h3>Ce que je recherche</h3>
+            <p>Je cherches des opportunités d’apprentissage, des collaborations académiques,et des expériences qui me permettront de progrésser dans le développement web, le design et la valorisationde projets persoonels.</p>
         </div>
     </div>
+</div>
+
+<!-- PROJETS -->
+<section id="projets">
+    <h2>Mes projets</h2>
+
+    <div class="grid projets">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <h3>Mini site vitrine</h3>
+            <p>Réalisation d'un site simple, responsive et élégant pour préserver une activité, un service ou une identité personnelle.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+            <h3>Interface web</h3>
+            <p>Conception d'une interface claire avec section bien organisées, navigation intuitive et design moderne.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+            <h3>Projet JavaScript</h3>
+            <p>Mise en pratique de la logique intérative, de la manipulation du DCM et de fonctionnalités dynamique utiles.</p>
+        </div>
+    </div>
+
+    <div class="grid projets">
+        <div class="card">
+            <img src="image travail.jpg" alt="photooo">
+            <h3>Travail en groupe</h3>
+            <p>Participation à des exercice collaboratifs pour améliorer l'organisation, la communication et le rendu final.</p>
+        </div>
+
+        <div class="card">
+            <img src="image presentation.jpg" alt="mon imgage">
+            <h3>Présentation en groupe</h3>
+            <p>Création de supports visuels pour un sujet de façon claire, cohérente et professionnelle.</p>
+        </div>
+
+        <div class="card">
+            <img src="image apprentissage.jpg" alt="photooooo im">
+            <h3>Apprentissage continu</h3>
+            <p>Explication réguliére de nouvelle méthode, outils et bonne pratiques pour améliorer mes réalisations.</p>
+        </div>
+    </div>
+</section>
+
+<section id="profil">
+    <h2>Mon profil</h2>
+
+
+
+    
+
+    <div class="paras">
+        <div class="para">2026 <br>Année de progréssion et de considération</div>
+        <div class="para">5+<br>Projets d'apprentissage réalisé</div>
+        <div class="para">100%<br>Motivation pour apprendre et évoluer</div>
+        <div class="para">UI<br>Intêret pour le web et le design visuel</div>
+    </div>
+</div>
+    </section>
+
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Je suis ouverte aux échanges, aux opportunités d'apprentissage et aux prjets académiques ou personnels. N'hesitez pas à me contacter pour discuter,collaborer ou simplement découvrir mon univers.</p>
+  <div class="buttons">
+        <button class="btn gauche">Envoyer un email</button>
+        <button class="btn droite">Télécharger mon CV</button>
+    </div>
+
+  
+</section>
+
+<footer>
+  <p>© 2026 Portfolio Ndeye Amy Cissé---Portfolio étudiant/personnel</p>
+</footer>
 
 </body>
 </html>
